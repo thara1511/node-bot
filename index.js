@@ -3,7 +3,7 @@ var restify = require('restify');
 
 // サーバー生成
 var server = restify.createServer();
-var port = process.env.PORT || 8080;
+var port = process.env.port || 8080;
 
 // http://0.0.0.0:8080/hello_worldにGETリクエストしたときの処理
 function helloWorld(req, res, next){
