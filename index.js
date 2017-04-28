@@ -3,6 +3,7 @@ var restify = require('restify');
 
 // サーバー生成
 var server = restify.createServer();
+var port = process.env.PORT || 8080;
 
 // http://0.0.0.0:8080/hello_worldにGETリクエストしたときの処理
 function helloWorld(req, res, next){
@@ -16,7 +17,7 @@ function helloWorld(req, res, next){
 // ↓はhttp://0.0.0.0:8080/hello_worldにGETリクエストしたらhelloWorld関数を実行
 server.get('/hello_world', helloWorld);
 
-server.listen((1337), function() {
+server.listen(port, function() {
 	console.log('%s listening at %s', server.name, server.url);
 });
 
