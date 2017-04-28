@@ -16,7 +16,7 @@ function helloWorld(req, res, next){
 // ↓はhttp://0.0.0.0:8080/hello_worldにGETリクエストしたらhelloWorld関数を実行
 server.get('/hello_world', helloWorld);
 
-server.listen((8080), function() {
+server.listen((1337), function() {
 	console.log('%s listening at %s', server.name, server.url);
 });
 
