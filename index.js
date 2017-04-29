@@ -1,3 +1,4 @@
+/*
 'use strict';
 
 const http = require('http');
@@ -14,6 +15,7 @@ const PORT = 3000;
 /**
  * httpリクエスト部分
  */
+/*
 const client = (replyToken, SendMessageObject) => {    
     let postDataStr = JSON.stringify({ replyToken: replyToken, messages: SendMessageObject });
     let options = {
@@ -88,8 +90,9 @@ http.createServer((req, res) => {
 }).listen(PORT);
 
 console.log(`Server running at ${PORT}`);
+*/
 
-/*var http = require('http');
+var http = require('http');
 var restify = require('restify');
 
 // サーバー生成
@@ -102,7 +105,7 @@ function helloWorld(req, res, next){
 	res.send("Hello");
     console.log('invoke hellowrold');
     //next();
-}*/
+}
 
 // パスと関数の紐付け
 // ↓はhttp://0.0.0.0:8080/hello_worldにGETリクエストしたらhelloWorld関数を実行
