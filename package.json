@@ -6,10 +6,9 @@
     "license": "MIT",
     "author": "Microsoft",
     "engines": {
-        "node": ">=6.9.1",
-        "restify": "^4.3.0"
+        "node": ">=6.9.1"
     },
-    "scripts": {
-        "start": "node index.js"
+    "dependencies": {
+        "restify": "^4.3.0"
     }
 }
